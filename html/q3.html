@@ -13,3 +13,23 @@
     <script src="../js/q3.js"></script>
 </body>
 </html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Traveling Info</title>
+</head>
+<body>
+  <h1>Traveling Information</h1>
+  <form id="travelForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="countries">Countries:</label><br>
+    <div id="countriesList">
+      <div class="country">
+        <input type="text" name="countryName[]" placeholder="Country name">
+        <input type="number" name="year[]" placeholder="Year visited">
+      </div>
+    </div>
+    <button type="button" id="addCountry">Add country</button><br><br>
+    <button type="submit">Submit</button>
+  </form>
